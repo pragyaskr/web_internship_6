@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            margin: 20px;
+            background: #fff;
+            font-family: Times New Roman, Times, serif;
+        }
+        .container {
+            border: 2px solid #222;
+            padding: 0;
+            width: 95vw;
+            height: 90vh;
+            min-width: 600px;
+            min-height: 400px;
+            position: relative;
+        }
+        .sidenav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 35px;
+            gap: 16px;
+        }
+        .sidenav-btn {
+            width: 48px;
+            height: 48px;
+            margin-left: 0;
+            margin-bottom: 0;
+            border-radius: 4px 0 0 4px;
+            transition: width 0.2s;
+            cursor: pointer;
+        }
+        .sidenav-btn.green { background: #23b47e; }
+        .sidenav-btn.blue  { background: #3ba3d6; }
+        .sidenav-btn.red   { background: #ea3d3b; }
+        .sidenav-btn.gray  { background: #444; }
+        .main-content {
+            margin-left: 70px;
+            padding: 30px 20px 0 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0 0 10px 0;
+            font-family: Times New Roman, Times, serif;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <div class="sidenav-btn green"></div>
+            <div class="sidenav-btn blue"></div>
+            <div class="sidenav-btn red"></div>
+            <div class="sidenav-btn gray"></div>
+        </div>
+        <div class="main-content">
+            <h1><b>Hoverable Sidenav Buttons</b></h1>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+</html>

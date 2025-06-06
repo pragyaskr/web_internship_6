@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music World</title>
+    <style>
+        body {
+            margin: 0;
+            background: url('https://img.freepik.com/free-photo/blue-stage-lights-background_1048-11328.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+        .header {
+            background: rgba(20, 20, 20, 0.8);
+            border-bottom: 2px dotted #b8b8b8;
+            padding: 18px 0 0 0;
+            text-align: left;
+        }
+        .header-title {
+            font-family: 'Impact', 'Arial Black', Arial, sans-serif;
+            font-size: 2.7em;
+            color: #e6f2ff;
+            text-shadow: 2px 2px 6px #000, 0 0 16px #0ff;
+            margin-left: 32px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            background: #444a4e;
+            padding: 8px 0 8px 32px;
+            border-bottom: 2px dotted #b8b8b8;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #fff;
+            background: #666a70;
+            padding: 8px 24px;
+            margin-right: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            border: 1px solid #888;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar a:hover {
+            background: #222;
+            color: #ffd700;
+        }
+        .section {
+            margin: 34px 28px 0 28px;
+            background: rgba(28, 32, 46, 0.78);
+            border: 2px dotted #b8b8b8;
+            border-radius: 14px;
+            padding: 18px 22px 24px 22px;
+        }
+        .section-title {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 18px;
+            margin-left: 6px;
+            letter-spacing: 1px;
+        }
+        .album-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 10px;
+        }
+        .album-cover {
+            width: 120px;
+            height: 170px;
+            background: #222;
+            border: 2px solid #0af;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 900px) {
+            .album-row {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .album-cover {
+                width: 90px;
+                height: 120px;
+            }
+            .section {
+                margin: 14px 4px 0 4px;
+                padding: 12px 6px 14px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Music World</div>
+    </div>
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">CATEGORY I</a>
+        <a href="#">PRODUCTION</a>
+        <a href="#">GALLERY</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">LOGIN</a>
+    </div>
+    <div class="section">
+        <div class="section-title">&rarr; Latest Album ...</div>
+        <div class="album-row">
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Album 1"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Album 2"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Album 3"></div>
+            <div class="album-cover"><img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Angry_Birds_Movie_poster.png" alt="Angry Birds"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Album 5"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Album 6"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Album 7"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">&rarr; TOP 10 Songs ...</div>
+        <div class="album-row">
+            <div class="album-cover"><img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Angry_Birds_Movie_poster.png" alt="Angry Birds"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Song 2"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Song 3"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Song 4"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Song 5"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Song 6"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Song 7"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">&rarr; Top 10 Artist ...</div>
+        <div class="album-row">
+            <div class="album-cover"><img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Angry_Birds_Movie_poster.png" alt="Artist 1"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Artist 2"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Artist 3"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Artist 4"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Artist 5"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Artist 6"></div>
+            <div class="album-cover"><img src="https://m.media-amazon.com/images/I/81Vw6kBvQbL._AC_SY679_.jpg" alt="Artist 7"></div>
+        </div>
+    </div>
+</body>
+</html>
